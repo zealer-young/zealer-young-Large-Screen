@@ -1,0 +1,20 @@
+node_modules
+.DS_Store
+dist
+/dist
+.npmrc
+.cache
+/.history
+/.idea
+
+.local
+*.local
+# local env files
+.env.local
+.env.*.local
+.eslintcache
+
+# Editor directories and files
+**/.idea/
+**/.idea/workspace.xml
+.vscode
