@@ -119,6 +119,9 @@
     .发案趋势, .案发时段 {
       height: px(363);
     }
+    .chart12 {
+      flex: 1;display: flex; flex-direction: column;
+    }
     .年龄段 {display: flex;flex-direction: column;
       height: px(363);
       > .charts {
@@ -129,7 +132,7 @@
       }
       &-图1, &-图2 {
         .legend {height: px(40); display: flex; align-items: center;
-          justify-content: center; flex-wrap: wrap;
+          justify-content: center; flex-wrap: wrap; padding-right: px(10);
           > span {display: inline-block; width: px(16); height: px(10);
             border-radius: px(2); margin: 0 px(10);}
           .male {background: #33a4fa;}
@@ -181,9 +184,11 @@
         }
       }
     }
-    .战果 {
+    .战果, .作案手段 {
+      padding: 0 px(24);
       > table {
-        margin-top: px(38);
+        width: 100%; table-layout: fixed;
+        margin-top: px(25);
         border-collapse: collapse;
         th, td {
           border: 1px solid #1a3671;
@@ -199,6 +204,15 @@
             background: #1c2456;
           }
 
+        }
+      }
+    }
+    .作案手段 {
+      > table {
+        tbody {
+          td {
+            height: px(26);
+          }
         }
       }
     }
